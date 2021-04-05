@@ -1,0 +1,42 @@
+<div>
+    <span class="p-title">{{fa-icon "info" fixedWidth=true}} Match: {{details.entityString}}
+    </span>
+</div>
+<pre>
+<input type="button"  class="btn btn-outline-success btn-sm" onclick="copyLink()" data-toggle="tooltip" title="Copy to Clipboard" value="copy->" readonly /><span id="copyText"> {{details.message}}</span>
+</pre>
+{{#if details.notes}}
+    <div>
+        <span class="p-key">Notes: </span>
+        <span class="p-value">{{details.notes}}</span>
+    </div>
+{{/if}}
+{{#if details.referenceURL}}
+    <div>
+        <span class="p-key">Reference: </span>
+        <span class="p-value"><a href='{{details.referenceURL}}'>{{details.referenceURL}}</a></span>
+    </div>
+{{/if}}
+
+
+
+
+
+<script>
+  function copyLink() {
+    let copyText = document.getElementById("copyText") 
+
+    var selection = window.getSelection();
+
+    var range = document.createRange();
+
+    range.selectNodeContents(copyText);
+
+    selection.removeAllRanges();
+
+    selection.addRange(range);
+
+    document.execCommand('copy');
+  }
+</script>
+

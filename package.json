@@ -1,0 +1,10 @@
+{
+  "main": "./integration.js",
+  "name": "RegexCheatSheet",
+  "description": "Search popular strings like IP or email and get regex suggestions",
+  "version": "3.0.0-beta",
+  "private": true,
+  "dependencies": {
+    "papaparse": "^5.3.0"
+  }
+}

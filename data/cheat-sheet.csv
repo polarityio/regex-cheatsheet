@@ -1,0 +1,185 @@
+entityString,message,notes,referenceURL
+^,"start of string or start of multi-line pattern","When used with [], it can also be used for NOT certain characters for example NOT A B Or C looks like [^abc]"
+start,^,See also \A
+start of string,^,See also \A
+\A,start of string,start of string
+$,"End of string, or end of line in multi-line pattern",
+end,$,"See also \Z"
+end of string,$,"See also \Z"
+\Z,End of string
+\b,Word boundary
+word boundary,\b
+boundary,\b
+\B,Not word boundary
+Not word boundary,\B
+\<,Start of word
+Start of word,\<
+start of word,\<
+\>,End of word
+End of word,\>,
+end of word,\>,
+\c,Control character
+Control character,\c
+\s,White space,"Which exact characters, depends on the regex flavor. It usually includes tab,carriage return, new line, and form feed, [\t\r\n\f]"
+White space,\s,"Which exact characters, depends on the regex flavor. It usually includes tab,carriage return, new line, and form feed, [\t\r\n\f]"
+white space,\s,"Which exact characters, depends on the regex flavor. It usually includes tab,carriage return, new line, and form feed, [\t\r\n\f]"
+space,\s,"White-Space:Which exact characters, depends on the regex flavor. It usually includes tab,carriage return, new line, and form feed, [\t\r\n\f]"
+\S,Not white space
+Not white space,\S
+not white space,\S
+\d,Digit
+Digit,\d
+digit,\d
+number,\d
+\D,Not digit
+Not digit,\D
+not digit,\D
+\w,Word,"A “word character” is a character that can be used to form words. ... Exactly which characters are word characters depends on the regex flavor you're working with. In most flavors, characters that are matched by the short-hand character class \w are the characters that are treated as word characters by word boundaries.","https://www.regular-expressions.info/wordboundaries.html"
+Word,\w,"A “word character” is a character that can be used to form words. ... Exactly which characters are word characters depends on the regex flavor you're working with. In most flavors, characters that are matched by the short-hand character class \w are the characters that are treated as word characters by word boundaries.","https://www.regular-expressions.info/wordboundaries.html"
+word,\w,"A “word character” is a character that can be used to form words. ... Exactly which characters are word characters depends on the regex flavor you're working with. In most flavors, characters that are matched by the short-hand character class \w are the characters that are treated as word characters by word boundaries.","https://www.regular-expressions.info/wordboundaries.html"
+alpha,[a-zA-Z], "or use something like \w depending on your needs"
+alphanumeric,[a-zA-Z0-9], "or use something like \w and \d depending on your needs"
+\W,Not word
+Not word,\W
+not word,\W
+\x,Hexade­cimal digit,"for example used as \x41 or \x90,If you want to look for 'hex' characters try [a-fA-F0-9]"
+Hexade­cimal digit,"\x","for example used as \x41 or \x90,If you want to look for 'hex' characters try [a-fA-F0-9]"
+Hexade­cimal,"\x","for example used as \x41 or \x90, If you want to look for 'hex' characters try [a-fA-F0-9]"
+hexade­cimal,"\x","for example used as \x41 or \x90, If you want to look for 'hex' characters try [a-fA-F0-9]"
+hex,"\x","for example used as \x41 or \x90,If you want to look for 'hex' characters try [a-fA-F0-9]"
+Hex,"\x","for example used as \x41 or \x90,If you want to look for 'hex' characters try [a-fA-F0-9]"
+HEX,"\x","for example used as \x41 or \x90,If you want to look for 'hex' characters try [a-fA-F0-9]"
+\O,Octal digit
+Octal digit,\O
+octal digit,\O
+octal,\O
+Octal,\O
+OCTAL,\O
+
+[:upper:],"Upper case letters",POSIX
+[:lower:],"Lower case letters",POSIX
+[:alpha:],"All letters",POSIX
+[:alnum:],"Digits and letters",POSIX
+[:digit:],"Digits",POSIX
+[:xdigit:],"Hexade­cimal digits",POSIX
+[:punct:],"Punctu­ation",POSIX
+[:blank:],"Space and tab",POSIX
+[:space:],"Blank characters",POSIX
+[:cntrl:],"Control characters",POSIX
+[:graph:],"Printed characters",POSIX
+[:print:],"Printed characters and spaces",POSIX
+[:word:],"Digits, letters and underscore",POSIX
+
+?=,Lookahead, Assertion
+Lookahead,?=, Assertion
+lookahead,?=, Assertion
+look ahead,?=, Assertion
+?!,Negative lookahead,Assertion
+Negative lookahead,?!,Assertion
+negative lookahead,?!,Assertion
+?<=,Lookbehind, Assertion
+Lookbehind,?<=,Assertion
+lookbehind,?<=,Assertion
+look behind,?<=,Assertion
+?!=,Negative lookbehind,Assertion
+Negative lookbehind,?!=,Assertion
+negative lookbehind,?!=,Assertion
+?<!,Negative lookbehind,Assertion
+?>,"Once-only Subexp­ression",Assertion
+?(),"Condition [if then]",Assertion
+"if then",?(),Assertion
+"if",?(),Assertion
+?()|,"Condition [if then else]",Assertion
+if then else,?()|,Assertion
+if else,?()|,Assertion
+?#,Comment,Assertion
+Comment,?#,Assertion
+comment,?#,Assertion
+*,0 or more,Quantifier
+0 or more,*,Quantifier
++,1 or more,Quantifier
+1 or more,+,Quantifier
+?,0 or 1,Quantifier
+0 or 1,?,Quantifier
+{},"Used as quantifer for example {3} is exactly 3, {3,} is 3 or more, {3,5} is 3,4,or 5 long", Quantifier
+{,"Used as quantifer for example {3} is exactly 3, {3,} is 3 or more, {3,5} is 3,4,or 5 long", Quantifier
+\,Escape following character,"'Esc­api­ng' is a way of treating characters which have a special meaning in regular expres­sions literally, rather than as special charac­ters."
+escape,\,"'Esc­api­ng' is a way of treating characters which have a special meaning in regular expres­sions literally, rather than as special charac­ters."
+\Q,Begin literal sequence,"'­Esc­api­ng' is a way of treating characters which have a special meaning in regular expres­sions literally, rather than as special charac­ters."
+\E,End literal sequence,"'Esc­api­ng' is a way of treating characters which have a special meaning in regular expres­sions literally, rather than as special charac­ters."
+\n,New line
+New line,\n
+new line,\n
+newline,\n
+\r,Carriage return
+Carriage return,\r
+carriage return,\r
+return,\r,carriage return
+\t,Tab
+Tab,\t
+tab,\t
+\v,Vertical tab
+Vertical tab,\v
+vertical tab,\v
+\f,Form feed
+form feed,\f
+\xxx,Octal character xxx
+\xhh,Hex character hh
+.,Any character except new line (\n)
+(),"Used as group, (...), often used in combination with '|' which operates an an logical or, for example (A|B) is equivalent to 'A' or 'B'"
+group,()," (...), often used in combination with '|' which operates an an logical or, for example (A|B) is equivalent to 'A' or 'B'"
+"(","Used as group, (...), often used in combination with '|' which operates an an logical or, for example (A|B) is equivalent to 'A' or 'B'"
+"(?)","Passive (non-capturing) group"
+"(?",Passive (non-capturing) group
+[],"Range, for example [abc] is a or b or c"
+[,"Range, for example [abc] is a or b or c, or [a-z] is a to z"
+[^],"not, for example [^abc] is NOT (a or b or c)"
+not,[^]," for example [^abc] is NOT (a or b or c)"
+Not,[^]," for example [^abc] is NOT (a or b or c)"
+NOT,[^]," for example [^abc] is NOT (a or b or c)"
+[^,"not, for example [^abc] is NOT (a or b or c)"
+
+
+IP,"/\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/ig",,regexr.com/38odc
+IPv4,"/\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/ig",,regexr.com/38odc
+IP Address,"/\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/ig",,regexr.com/38odc
+ip,"/\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/ig",,regexr.com/38odc
+ipv4,"/\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/ig",,regexr.com/38odc
+ip address,"/\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/ig",,regexr.com/38odc
+ipv6,"((?=.*::)(?!.*::.+::)(::)?([\dA-Fa-f]{1,4}:(:|\b)|){5}|([\dA-Fa-f]{1,4}:){6})((([\dA-Fa-f]{1,4}((?!\3)::|:\b|(?![\dA-Fa-f])))|(?!\2\3)){2}|(((2[0-4]|1\d|[1-9])?\d|25[0-5])\.?\b){4})"
+IPv6,"((?=.*::)(?!.*::.+::)(::)?([\dA-Fa-f]{1,4}:(:|\b)|){5}|([\dA-Fa-f]{1,4}:){6})((([\dA-Fa-f]{1,4}((?!\3)::|:\b|(?![\dA-Fa-f])))|(?!\2\3)){2}|(((2[0-4]|1\d|[1-9])?\d|25[0-5])\.?\b){4})"
+IPV6,"((?=.*::)(?!.*::.+::)(::)?([\dA-Fa-f]{1,4}:(:|\b)|){5}|([\dA-Fa-f]{1,4}:){6})((([\dA-Fa-f]{1,4}((?!\3)::|:\b|(?![\dA-Fa-f])))|(?!\2\3)){2}|(((2[0-4]|1\d|[1-9])?\d|25[0-5])\.?\b){4})"
+mac,"[A-Fa-f\d]{2}(?:[:-][A-Fa-f\d]{2}){5}"
+MAC,"[A-Fa-f\d]{2}(?:[:-][A-Fa-f\d]{2}){5}"
+string,"[A-Za-z\d/\-:.,_$%\x27"()<>= !\[\]{}@]{4,}"
+strings,"[A-Za-z\d/\-:.,_$%\x27"()<>= !\[\]{}@]{4,}"
+
+email,"\b(?:[\u00A0-\uD7FF\uE000-\uFFFFa-z0-9!#$%&'*+/=?^_`{|}~-]{1,128}(?:\.[\u00A0-\uD7FF\uE000-\uFFFFa-z0-9!#$%&'*+/=?^_`{|}~-]{1,64}){0,16})@(?:(?:[\u00A0-\uD7FF\uE000-\uFFFFa-z0-9](?:[\u00A0-\uD7FF\uE000-\uFFFF-a-z0-9-]{0,128}[\u00A0-\uD7FF\uE000-\uFFFFa-z0-9])?\.){1,16}[\u00A0-\uD7FF\uE000-\uFFFFa-z0-9](?:[\u00A0-\uD7FF\uE000-\uFFFFa-z0-9-]{0,16}[\u00A0-\uD7FF\uE000-\uFFFFa-z0-9])?)\b",,https://regexper.com/#%5Cb%28%3F%3A%5B%5Cu00A0-%5CuD7FF%5CuE000-%5CuFFFFa-z0-9!%23%24%25%26'*%2B%2F%3D%3F%5E_%60%7B%7C%7D~-%5D%7B1%2C128%7D%28%3F%3A%5C.%5B%5Cu00A0-%5CuD7FF%5CuE000-%5CuFFFFa-z0-9!%23%24%25%26'*%2B%2F%3D%3F%5E_%60%7B%7C%7D~-%5D%7B1%2C64%7D%29%7B0%2C16%7D%29%40%28%3F%3A%28%3F%3A%5B%5Cu00A0-%5CuD7FF%5CuE000-%5CuFFFFa-z0-9%5D%28%3F%3A%5B%5Cu00A0-%5CuD7FF%5CuE000-%5CuFFFF-a-z0-9-%5D%7B0%2C128%7D%5B%5Cu00A0-%5CuD7FF%5CuE000-%5CuFFFFa-z0-9%5D%29%3F%5C.%29%7B1%2C16%7D%5B%5Cu00A0-%5CuD7FF%5CuE000-%5CuFFFFa-z0-9%5D%28%3F%3A%5B%5Cu00A0-%5CuD7FF%5CuE000-%5CuFFFFa-z0-9-%5D%7B0%2C16%7D%5B%5Cu00A0-%5CuD7FF%5CuE000-%5CuFFFFa-z0-9%5D%29%3F%29%5Cb
+
+domain,"\b((?=[a-z0-9-]{1,63}\.)(xn--)?[a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,63}\b(?!@)","If you are looking for something simpler, try /\b[A-Z0-9.-]+\.[A-Z]{2,16}\b/","https://regexper.com/#%5Cb%28%28%3F%3D%5Ba-z0-9-%5D%7B1%2C63%7D%5C.%29%28xn--%29%3F%5Ba-z0-9%5D%2B%28-%5Ba-z0-9%5D%2B%29*%5C.%29%2B%5Ba-z%5D%7B2%2C63%7D%5Cb%28%3F!%40%29"
+url,"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",,https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url
+base64,"(?:[A-Za-z0-9+\/]{4})+(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?","Depending on your use, you might want to start with strings longer than 4 characters
+image,"([0-9a-zA-Z\._-]+.(png|PNG|gif|GIF|jp[e]?g|JP[E]?G))"
+image filename,"([0-9a-zA-Z\._-]+.(png|PNG|gif|GIF|jp[e]?g|JP[E]?G))"
+path,"(([a-zA-Z]{1}:|\\)(\\[^\\/<>:\|\*\?\"\n\r]+)+(\.[^\\/<>:\|\r\n]{1,4})?)","Example is for Windows-Does not assume a file extension is required, try this for UNIX /(?:/[A-Za-z\d.][A-Za-z\d\-.]{0,61})+/"
+file path,"(([a-zA-Z]{1}:|\\)(\\[^\\/<>:\|\*\?\"\n\r]+)+(\.[^\\/<>:\|\r\n]{1,4})?)","Example is for Windows-Does not assume a file extension is required, try this for UNIX /(?:/[A-Za-z\d.][A-Za-z\d\-.]{0,61})+/"
+windows file path,"(([a-zA-Z]{1}:|\\)(\\[^\\/<>:\|\*\?\"\n\r]+)+(\.[^\\/<>:\|\r\n]{1,4})?)",Example is for Windows-Does not assume a file extension is required
+Windows file path,"(([a-zA-Z]{1}:|\\)(\\[^\\/<>:\|\*\?\"\n\r]+)+(\.[^\\/<>:\|\r\n]{1,4})?)",Example is for Windows-Does not assume a file extension is required
+
+epoch,"\d{10}"Assumes length of 10
+epoch time,"\d{10}",Assumes length of 10
+date,"((?:19|20)\d\d)[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])","yyyy-mm-dd, modify as needed"
+
+md5,"[a-fA-F0-9]{32}","You may also want to anchor begining and end such as,/^[A-Fa-f0-9]{32}$/"
+MD5,"[a-fA-F0-9]{32}","You may also want to anchor begining and end such as,/^[A-Fa-f0-9]{32}$/"
+sha256,"[A-Fa-f0-9]{64}","You may also want to anchor begining and end such as,/^[A-Fa-f0-9]{64}$/",https://stackoverflow.com/questions/6630168/what-does-sha256-hexadecimal-string-look-like
+SHA256,"[A-Fa-f0-9]{64}","You may also want to anchor begining and end such as,/^[A-Fa-f0-9]{64}$/",https://stackoverflow.com/questions/6630168/what-does-sha256-hexadecimal-string-look-like
+sha256,"[A-Fa-f0-9]{128}","You may also want to anchor begining and end such as,/^[A-Fa-f0-9]{128}$/"
+SHA256,"[A-Fa-f0-9]{128}","You may also want to anchor begining and end such as,/^[A-Fa-f0-9]{128}$/"
+cve,"[cC][vV][eE]-\d{4}-\d{4,7}","With case insensitivty, you can also try /CVE-\d{4}-\d{4,7}/i, folks sometimes also narrow the year down such as (CVE-(1999|2\d{3})-(0\d{2}[0-9]|[1-9]\d{3,7}))",https://stackoverflow.com/questions/30602997/regular-expression-to-find-cve-matches/30786347
+CVE,"[cC][vV][eE]-\d{4}-\d{4,7}","With case insensitivty, you can also try /CVE-\d{4}-\d{4,7}/i, folks sometimes also narrow the year down such as (CVE-(1999|2\d{3})-(0\d{2}[0-9]|[1-9]\d{3,7}))",https://stackoverflow.com/questions/30602997/regular-expression-to-find-cve-matches/30786347
+
+latlong,"[-+]?([1-8]?\d(\.\d\d\d\d+)|90(\.0+)),\s?\s?[-+]?(180(\.0+)|((1[0-7]\d)|([1-9]?\d))(\.\d\d+))"
+lat long,"[-+]?([1-8]?\d(\.\d\d\d\d+)|90(\.0+)),\s?\s?[-+]?(180(\.0+)|((1[0-7]\d)|([1-9]?\d))(\.\d\d+))"
+address,"\d{1,9} ([^\n\r0-9,]{2,100}, ([A-Za-z ]{1,20}\d{1,9}|\d{1,3}[A-Za-z ]{1-20})[, ]?[^\n\r0-9]{2,100}[, ]?|(N |S |E |W |north |south |east |west )?\d{1,9}[^\n\r0-9 ][^\n\r0-9]{2,100}|(N |S |E |W |north |south |east |west )?\d{1,9}[^\n\r0-9, ][^\n\r0-9,]{2,100},[A-Za-z ]{1,20}\d{1,9},?[^\n\r0-9,]{2,100},?|[^\n\r0-9,]{2,100},[A-Za-z ]{1,20}\d{1,9},?[^\n\r0-9]{2,100},?|[^\n\r0-9]{2,100})[, ](AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MP|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY|Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New[ ]Hampshire|New[ ]Jersey|New[ ]Mexico|New[ ]York|North[ ]Carolina|North[ ]Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode[ ]Island|South[ ]Carolina|South[ ]Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West[ ]Virginia|Wisconsin|Wyoming)[, ]+\d{5}(?:-\d{4})?",US Property
+
