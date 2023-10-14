@@ -5,6 +5,6 @@
   "description": "Search popular strings like IP or email and get regex suggestions",
   "private": true,
   "dependencies": {
-    "papaparse": "^5.3.0"
+    "papaparse": "^5.4.1"
   }
 }
